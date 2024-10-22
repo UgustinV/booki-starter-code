@@ -53,6 +53,52 @@ header {
     color: var(--main-color);
 }
 
+.search-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 49px;
+    margin-bottom: 10px;
+}
+
+.search-element{
+    height: 100%;
+    border: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.search-input{
+    padding: 0;
+    width: 195px;
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+}
+
+.search-button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    border: solid 1px var(--main-color);
+}
+
+.icon-contener{
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--main-bg-color);
+    border: solid 1px var(--main-bg-color);
+    color: black;
+}
+
+.fa-color{
+    color: black;
+}
+
 a {
     color: inherit;
     text-decoration: none;
