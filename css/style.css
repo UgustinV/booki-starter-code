@@ -39,7 +39,7 @@ header {
 
 .logo-img{
     height: 19px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 0;
 }
 
 .nav-item{
@@ -53,12 +53,29 @@ header {
     color: var(--main-color);
 }
 
+#info-group{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.info-group-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subtitle{
+    font-size: 16px;
+    margin: 0;
+}
+
 .search-form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 49px;
-    margin-bottom: 10px;
+    height: 51px;
 }
 
 .search-element{
@@ -80,7 +97,7 @@ header {
 .search-button{
     background-color: var(--main-color);
     color: white;
-    padding: 15px;
+    padding: 0 16px;
     border-radius: 0 15px 15px 0;
     border: solid 1px var(--main-color);
 }
@@ -97,6 +114,52 @@ header {
 
 .fa-color{
     color: black;
+}
+
+.filter-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    margin: 2px 0;
+    gap: 15px;
+}
+
+.filter-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    padding: 0 19px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filter:hover{
+    background-color: var(--filter-bg-color);
+}
+
+.filter-name{
+    padding-left: 10px;
+}
+
+.offers-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-icon{
+    border: solid 1px var(--main-bg-color);
+    border-radius: 15px;
+    padding: 5px 9px;
+    font-size: 14px;
 }
 
 a {
