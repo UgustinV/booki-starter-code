@@ -21,7 +21,6 @@
             <nav class="navbar">
                 <a href="#hebergements" class="nav-item">Hébergements</a>
                 <a href="#activites" class="nav-item">Activités</a>
-                <!-- TODO : ajouter l'id activités à la div activités -->
             </nav>
         </header>
         <main>
@@ -169,7 +168,7 @@
                             </article>
                         </a>
                     </div>
-                    <h3 class="display-more">Afficher Plus</h3>
+                    <a class="display-more" href="#">Afficher Plus</a>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -237,8 +236,55 @@
                     </div>
                 </section>
             </div>
+            <section class="activites" id="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port">
+                            <h3 class="card-title">Vieux-Port</h3>
+
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image fort de Pomègues">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                            <h3 class="card-title">Parc national des Calanques</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="footer-section">
+                <h3 class="footer-title">A propos</h3>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales</a>
+                <a href="#">Données et confidentialité</a>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Nos hébergements</h3>
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Assistance</h3>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </section>
+        </footer>
     </div>
 </body>
 
