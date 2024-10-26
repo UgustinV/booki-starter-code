@@ -165,6 +165,7 @@ header {
     border-radius: 25px;
     padding: 12px 19px;
     font-weight: 700;
+    text-wrap: nowrap;
 }
 
 .filter:hover{
@@ -538,7 +539,9 @@ footer{
     }
     
     .filter{
-        flex: 1;
+        height: 100%;
+        padding: 12px 19px;
+        box-sizing: border-box;
     }
 
     .filter-name{
@@ -546,8 +549,9 @@ footer{
     }
 
     .filters{
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 
     /****Hebergements And Populaires****/
