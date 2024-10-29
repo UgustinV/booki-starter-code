@@ -94,7 +94,9 @@ header {
 }
 
 .navbar{
-    margin-top: 18px;
+    display: flex;
+    gap: 68px;
+    margin-right: 50px;
 }
 
 .logo-img{
@@ -104,7 +106,6 @@ header {
 
 .nav-item{
     height: fit-content;
-    margin-right: 50px;
     padding-top: 16px;
 }
 
@@ -150,20 +151,27 @@ header {
     border-bottom: solid 1px var(--main-bg-color);
 }
 
-.text-search-button{
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--main-color);
     color: white;
     padding: 0 16px;
     border-radius: 0 15px 15px 0;
     border: solid 1px var(--main-color);
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
-.icon-search-button{
-    background-color: var(--main-color);
-    padding: 0 16px 0 16px;
-    border-radius: 15px;
-    display: none;
-    border: solid 1px var(--main-color);
+.search-button::before {
+    content: "Rechercher";
+    display: inline-block;
+}
+
+.search-button,.filter:hover{
+    cursor: pointer;
 }
 
 .fa-search-color{
@@ -469,22 +477,20 @@ footer{
 
     /****HEADER****/
     header {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     .logo-img{
-        height: 19px;
         width: fit-content;
-        padding: 30px 0;
     }
 
     .navbar {
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-top: 0;
+        margin: 0;
+        gap: 0;
     }
 
     .nav-item{
@@ -493,15 +499,12 @@ footer{
         justify-content: center;
         width: 50%;
         padding: 0 0 15px 0;
-        margin-right: 0;
-        padding-top: 0;
         border-bottom: solid 2px var(--main-bg-color);
     }
     
     .nav-item:hover{
         border-top: 0;
         border-color: var(--main-color);
-        color: var(--main-color);
     }
 
     /****Info****/
@@ -514,19 +517,24 @@ footer{
         position: relative;
     }
 
-    .text-search-button{
-        display: none;
+    .search-button {
+        display: block;
+        z-index: 2;
+        right: 0;
+        border-radius: 15px;
+        padding: 0 16px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .search-button::before {
+        content: "\f002";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 1.2em;
     }
 
     .search-element{
         position: absolute;
-    }
-
-    .icon-search-button{
-        display: block;
-        z-index: 2;
-        right: 0;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
     .search-input{
@@ -545,7 +553,6 @@ footer{
     }
     
     .filter{
-        height: 100%;
         padding: 12px 19px;
         box-sizing: border-box;
     }
